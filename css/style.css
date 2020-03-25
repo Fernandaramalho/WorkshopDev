@@ -1,0 +1,353 @@
+body{
+    background: #5e5e5e;;
+    color: #252825;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-right: 100px;
+}
+body .hidescroll{
+    overflow: hidden;
+}
+
+#modal.addscroll{
+    overflow: auto;
+}
+
+#container{
+    width: 90%;
+    max-width: 980px;
+    margin: 40px auto;
+    display: flex;
+}
+
+#intro{
+    width: 300px;
+    margin-right: 20px;
+}
+main{
+    margin: 32px 0;
+}
+
+a {
+    color: #ff5e84;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+   text-decoration: underline;
+}
+p, .description{
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    margin-top: 50px;
+}
+
+#buttons{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 32px;
+ 
+}
+
+button{
+    border:none;
+    font-weight: bold;
+    background: none;
+    color:#ff5e84;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-top: 40px;
+}
+button:hover{
+    text-decoration: underline;
+}
+
+
+
+#buttons, footer{
+    text-align: center;
+    margin-bottom: 32px;
+}
+.fat{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+    background-color: #ff1d70;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.fat:hover{
+    background-color: #DC143C;
+    text-decoration: none;
+}
+
+
+footer{
+    text-align: center;
+    font-weight: regulat;
+    margin-top: 160px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color:white;
+}
+
+.ideia{
+    display: flex;
+    background-color:#ffff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px -8px #ff5e70;
+    margin-bottom: 32px;
+}
+
+.ideia img{
+    width: 70px;
+    height: 70px;
+    margin-right: 32px;
+}
+
+.ideia h3{
+    margin: 0;
+}
+
+.ideia p{
+    margin: 8px 0;
+    color:#777;
+}
+
+.ideia .description {
+    margin:  16px 0;
+}
+/*Modal*/
+.modal-body {
+    max-height:300px;
+    overflow:auto;
+  }
+#modal{
+    background-color: #ff5e70;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    transition: 400ms;    
+}
+
+
+#last-ideias{
+    margin-left: 100px;
+}
+#modal .content{
+   
+    color: white;
+}
+
+
+
+#modal form{
+    width: 80%;
+    
+    margin: 0 auto 11%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content form{
+    width: 80%;
+    max-width: 800px;
+    margin:0 auto;
+}
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ff5e70;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form label{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+form a{
+    width: 150px;
+    height: 40px;
+    background: white;
+    color:#ff1d70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 400ms;
+}
+
+form a:hover{
+    background: #ff1d70;
+    color: white;
+}
+
+form button{
+    background: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms
+}
+
+form button:hover{
+    background-color: #ff1d70;
+    color: white;
+    text-decoration: none;
+}
+
+#modal.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    width: 85%;
+}
+
+.logo:hover {
+    transform: rotate(5deg) scale(1.1);
+  }
+.footercor{
+    align-items: center;
+    justify-content: center;
+    
+}
+  .footercor {
+ 
+    background-color: #DC143C;
+    animation-name: example;
+    animation-duration: 2s;
+    
+  }
+  
+  @keyframes example {
+    from {background-color: #5e5e5e ;}
+    to {background-color: #5e5e5e;}
+  }
+
+
+/*ideia.html*/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-ideias #container{
+    display: block;
+}
+
+#page-ideias nav{
+    display: flex;
+    align-items: center;
+    margin-left: 710px;
+}
+#page-ideias nav li{
+   list-style-type: none;
+   margin-right: 16px;
+}
+#page-ideias nav li a{
+    columns: #25282b;
+}
+
+#page-ideias nav li:last-child{
+    margin: 0;
+
+}
+#page-ideias nav li:last-child a:hover{
+    background-color: #DC143C;
+    text-decoration: none;
+}
+
+#page-ideias nav li:last-child a{
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    background-color: #ff1d70;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+section#title{
+    text-align: center;
+    margin: 64px 0;
+    margin-left: 400px;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+   
+}
+
+section#title h1{
+    margin: 0;
+    margin-left: 0px;
+    font-size: 28px;
+
+}
+
+section#ideias{
+   
+    grid-template-columns: 1fr 1fr;
+    gap:10px
+}
+
+section#ideias{
+    margin: 0;
+}
+
+section#ideias,
+section#title,
+footer{
+    display: grid;
+    grid-column-gap: 50px 100px;
+
+    margin-top:64px;
+   
+}
+
