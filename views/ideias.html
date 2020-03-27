@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% set bodyId = "page-ideias" %}
+
+{% block title %}
+    <title>Ideias - House Creative</title>
+{% endblock title %}
+
+    {% block content %}
+        <header>
+            <A href="/">
+                <img class="logo" src="Img/house.png" alt="imagem da house creative">
+            </A>
+            <nav>
+                <li><a href="/">Início</a></li>
+                <li><a href="#" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+            <section id="title">
+                <p>Em Exibição</p>
+                <h1>Ideias</h1>
+            </section>
+            <main>
+                <section id="ideias">
+                    {% include "all_ideas.html" %}
+                </section>
+            </main>
+            <footer><span class="footercor"><a href="https://www.linkedin.com/in/fernandaramalho/" target="_blank">Com 💖 Fernanda...</a></span></footer>
+    
+    {% endblock %}

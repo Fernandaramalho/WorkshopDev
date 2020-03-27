@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+    <header>
+        <A href="/">
+         <img class="logo" src="/Img/house.png" alt="imagem da house creative">
+        </A>        
+    </header>
+    <main>
+        <p>
+            Ficar em casa em períodos longos devido a epidemia do Covid-19, não deve ser nada fácil.
+        </p>
+        <p>
+            Por isso, iremos catalogar <strong>ideias, brincadeiras, jogos, filmes, livros, cursos, dicas</strong>
+            e tudo que for necessário para tornar esse momento mais interessante para você que está em casa.
+            fique em casa não corra esse risco. Por favor...
+        </p>
+        <p>
+            Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionado a sua ideia.
+        </p>
+    </main>
+    <section id="buttons">
+        <a class="fat" onclick="onOff()">+ Adicionar Ideias</a>
+        <a class="fat" href="/ideias">Ver Ideias</a>
+    </section>
+    
+    <footer><span class="footercor"><a href="https://www.linkedin.com/in/fernandaramalho/" target="_blank">Com 💖 Fernanda...</a></span></footer>
+    
+</section>
+<section id="last-ideias">
+    {% include "all_ideas.html" %}
+</section>
+
+{% endblock %}
