@@ -32,3 +32,7 @@ function checkfields(event){
     })
 
 }
+
+function remover(id){
+    event.target.parentNode.parentNode.remove();
+}

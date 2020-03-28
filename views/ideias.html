@@ -21,6 +21,10 @@
                 <h1>Ideias</h1>
             </section>
             <main>
+                <form action="/remover" method="Post">
+                    <button class="remove">Remover</button>
+                    <input type="hidden" name="id" value="{{idea.id}}">
+                </form>
                 <section id="ideias">
                     {% include "all_ideas.html" %}
                 </section>

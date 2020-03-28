@@ -83,5 +83,16 @@ server.post("/", function(req, res){
    
 })
 
+server.post("/remover", function(req, res) {
+    //Deletando dado na tabela
+    const id =  req.body.id
+    db.run('DELETE FROM ideas WHERE id = ?',id, function(err) {
+        if (err) {
+            console.log(err)
+            return res.send("Erro no banco de dados!")
+        } 
+        return res.redirect("/ideias")
+    })
+})
 
 server.listen(35000)

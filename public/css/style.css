@@ -237,6 +237,31 @@ form button:hover{
     text-decoration: none;
 }
 
+
+form .remove{
+    background: #ff1d70;
+    height: 40px;
+    width: 90px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+    margin-left: 1050px;
+    position: absolute;
+  
+}
+
+form button:hover{
+    background-color: #DC143C;
+    color: white;
+    text-decoration: none;
+}
+
+
+
 #modal.hide{
     opacity: 0;
     visibility: hidden;
